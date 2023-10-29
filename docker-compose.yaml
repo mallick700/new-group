@@ -8,7 +8,10 @@ services:
       - ./:/usr/share/nginx/html
   adminer:  # Corrected indentation
     image: adminer
-    hostname: 34.207.211.150
-    restart: always
+  adminer:
+    image: adminer
     ports:
-      - 8070:8070
+      - "8070:8080"
+    environment:
+      ADMINER_DESIGN: nette
+    hostname: 34.207.211.150
