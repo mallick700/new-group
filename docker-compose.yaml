@@ -6,9 +6,9 @@ services:
       - "8000:80"
     volumes:
       - ./:/usr/share/nginx/html
-adminer:
-       image: adminer
-       hostname: 34.207.211.150
-       restart: always
-       ports:
-        - 8070:8070
+  adminer:  # Corrected indentation
+    image: adminer
+    hostname: 34.207.211.150
+    restart: always
+    ports:
+      - 8070:8070
